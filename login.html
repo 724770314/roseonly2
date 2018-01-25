@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="head">
+			<div class="logo_line2"></div>
+			<a href="#" class="roseonly-logo" ></a>
+			<a href="#" class="larose-logo"></a>
+			<div class="logo_line"></div>
+			<div class="right">
+				<a href="shopcar.html" class="right-shop"></a>
+				<span class="cartNum">(0)</span>
+			</div>
+		</div>
+	</div>
+	<div class="logo-container">
+		<a href="index.html" class="logo_nbtn">
+			<img title="roseonly官网" alt="roseonly官网" src="img/logo.jpg">
+		</a>
+	</div>
+	<!-- 导航开始 -->
+	<div id="topmenus" class="nav-container">
+		<div class="nav-bar">
+			<ul id="nav" class="cl-effect-1">
+				<li style="margin: 0 32px 0 0;">
+					<a href="lovegift.html" class="topmenu_1 qxlm">爱礼推荐</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">鲜花玫瑰</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">永生玫瑰</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">玫瑰珠宝</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">玫瑰饰品</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">玫瑰香氛</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">高端定制</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">诺誓世界</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				var topnav = document.getElementById('topmenus');
+				var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(scroll >= 120){
+					topnav.style.position = "fixed";
+					topnav.style.top = 0;
+				}else if(scroll <= 120){
+					topnav.style.position = "";
+				}
+			}
+		</script>
+	</div>
+	<!-- 主要内容 -->
+	<div class="login-container">
+		<div class="login_bj">
+			<div class="zc_cur_bj">
+				<a class="qixi_tz" href=""></a>
+				<form id="loginForm" action="" method="post">
+					<div class="register register_pass">
+						<div class="register_nav">
+							<select id="countryPrefixs" class="register_text indent" style="border: solid 1px #b3b3b3;">
+								<option value="61">澳大利亚</option>
+								<option value="82">韩国</option>
+								<option value="1">加拿大</option>
+								<option value="60">马来西亚</option>
+								<option value="1">美国</option>
+								<option value="81">日本</option>
+								<option value="65">新加坡</option>
+								<option value="44">英国</option>
+								<option value="86" selected="selected">中国</option>
+								<option value="853">中国澳门</option>
+								<option value="886">中国台湾</option>
+								<option value="852">中国香港</option>
+							</select>
+						</div>
+						<div class="register_nav">
+							<input type="text" name="username" id="username" class="register_text text_p" placeholder="请输入手机号" maxlength="30" />
+							<div id="prefixC" class="register_nav_86">+86</div>
+							<div class="reminder validate"></div>
+						</div>
+						<div class="register_nav">
+							<input type="password" name="password" id="password" class="register_password" placeholder="请输入密码" maxlength="16" />
+							<div class="reminder validate"></div>
+						</div>
+						<div class="signin_a">
+							<a class="signin_zc" href="register.html">快速注册</a>
+							<a class="signin_forget" href="">忘记密码？</a>
+						</div>
+						<a id="login-btn-submit" class="signin_button" href="javascript:;">登录</a>
+						<div class="register_bottom">
+							roseonly支持门店城市同城速递服务！
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+		
+	<!--结束-->
+	<div class="footer">
+		<div class="four_nav">
+			<a class="four_nav_a bg1" href="#">
+				<div class="four_nav_div">
+					全场包邮
+					<span class="f14 f_wg_box">特殊礼品除外</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg2" href="#">
+				<div class="four_nav_div">
+					同城速递
+					<span class="f14 f_wg_box">支持当日送达</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg3" href="#">
+				<div class="four_nav_div">
+					爱的留言
+					<span class="f14 f_wg_box">支持语音与文字，可随时查阅</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg4" href="#">
+				<div class="four_nav_div">
+					保养物语
+					<span class="f14 f_wg_box">悉心保养，恒久保存爱意</span>
+				</div>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_box">
+			<div class="new_l mr50">
+				<a href="">
+					<img src="img/logo2.png"/>
+				</a>
+				<div style="position: relative;margin-top: 30px;">
+					<a>关注我们</a>
+					<a style="position: absolute;left: 80px;top: -2px;">
+						<img src="img/wx.png"/>
+					</a>
+					<a style="position: absolute;left: 125px;top: -4px;">
+						<img src="img/wb.png"/>
+					</a>
+				</div>
+			</div>
+			<ul>
+				<p>新手指南</p>
+				<li><a href="">购物流程</a></li>
+				<li><a href="">会员尊享</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">指圈测量</a></li>
+			</ul>
+			<ul>
+				<p>售后服务</p>
+				<li><a href="">退款说明</a></li>
+				<li><a href="">保养物语</a></li>
+			</ul>
+			<ul>
+				<p>物流配送</p>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">配送服务</a></li>
+			</ul>
+			<ul style="background: none;">
+				<p>关于我们</p>
+				<li><a href="">品牌介绍</a></li>
+				<li><a href="">销售渠道</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">加入我们</a></li>
+			</ul>
+			<div class="new_r">
+				<a href="">
+					<img src="img/ewm.jpg" style="width: 122px;"/>
+				</a>
+				<p>微信关注roseonly</p>
+			</div>
+		</div>
+		<div class="foot-nav">
+			京ICP备13007738号 京公网安备11010502023922 www.roseonly.com.cn；诺誓（北京）商业股份有限公司
+		</div>
+	</div>
+	<!--客服开始-->
+	<div id="zhichiBtnBox">
+		<a id="zhichiBtn" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703636967439422.svg"/>
+		</a>
+		<div class="mes_content" style="display: none;">
+			<div class="mes_icon">
+				<div class="tel_sj">
+					<img src="img/arr2.png"/>
+				</div>
+				<div class="tel_icon">
+					<p class="tel_txt">联系电话</p>
+					<p class="phone">400-1314-520</p>
+				</div>
+				<div class="tel_line"></div>
+				<div class="zxkf_txt">
+					<a href="">在线客服</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二维码开始-->
+	<div id="ewmBox">
+		<a id="ewm" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14945591270622918.svg"/>
+		</a>
+		<div class="ewm_content">
+			<img src="img/ewm2.png"/>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zhichiBtnBox").hover(function () {
+			$(".mes_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".mes_content").css({
+				display: 'none'
+			})
+		});
+		$("#ewmBox").hover(function () {
+			$(".ewm_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".ewm_content").css({
+				display: 'none'
+			})
+		});
+	</script>
+</body>
+</html>

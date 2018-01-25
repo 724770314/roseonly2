@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/car.css">
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="head">
+			<div class="div_lang">
+				<label>内地</label>
+				<ul>
+					<li class="hk">
+						<a href="#">Hong Kong</a>
+					</li>
+					<li class="cn">
+						<a href="#">内地</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="roseonly-logo" ></a>
+			<a href="#" class="larose-logo"></a>
+			<div class="logo_line"></div>
+			<div class="right">
+				<a href="login.html" class="unlogin">
+					<span class="h_font">登录</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="register.html" class="unlogin">
+					<span class="h_font">注册</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="#" class="right-shop"></a>
+				<span class="cartNum">(0)</span>
+			</div>
+			<a href="#" class="std" target="_blank">
+				<label>专卖店</label>
+			</a>
+		</div>
+	</div>
+	<div class="logo-container">
+		<a href="index.html" class="logo_nbtn">
+			<img title="roseonly官网" alt="roseonly官网" src="img/logo.jpg">
+		</a>
+	</div>
+	<!-- 主要内容 -->
+	<div class="container">
+		<div>
+			<div class="nav-container">
+				<div class="main_view_line2"></div>
+			</div>
+		</div>
+		<div id="efg" class="order">
+			<div class="shopping">
+				<div class="shop-a">
+					<div class="shop-left" style="800px;">我的购物车</div>
+					<a id="cart_del_all" class="shop-right" href="javascript:void(0);">清空购物车</a>
+				</div>
+				<table class="shopping_cart" data-shopid="0" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr class="shopping_cart_title">
+							<td width="110">序号</td>
+							<td width="110">品牌</td>
+							<td width="420">商品名称</td>
+							<td width="120">单价</td>
+							<td width="13"></td>
+							<td width="60">数量</td>
+							<td width="13"></td>
+							<td>操作</td>
+						</tr>
+						<tr id="" class="wg_cart_list" data-price="2399.0" data-id="2064" height="120">
+							<td>1</td>
+							<td>roseonly</td>
+							<td>
+								<img class="shopping_cart_img" src="img/car.png" style="cursor: pointer;" onclick="window.open('details.html')"/>
+								<div class="shopping_cart_name">经典永续-经典-许愿-19支-80cm长形</div>
+							</td>
+							<td class="td_price_2064">￥2399.0</td>
+							<td>
+								<a class="cart_down" href="javascript:void(0);">
+									<img class="jia_jian" src="img/jian.png"/>
+								</a>
+							</td>
+							<td>
+								<input type="text" id="cart_count_2064" class="shopping_cart_sl" value="1" maxlength="4" data-num="23" />
+							</td>
+							<td align="right">
+								<a class="cart_up" href="javascript:void(0);">
+									<img class="jia_jian" src="img/jia.png"/>
+								</a>
+							</td>
+							<td>
+								<a class="cart_del" href="javascript:void(0);">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="cart_total">
+					合计:￥
+					<font id="cart_total">2399.0</font>
+					<input type="button" id="cart_pay" class="cart_button1" value="去结算" />
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="help-right">
+				<div class="help-nav">订单帮助</div>
+				<p>热线电话：400-1314-520</p>
+				<p>
+					客服邮箱：
+					<a href="mailto:service@roseonly.com">service@roseonly.com</a>
+					客服工作时间：周一至周日9:00-21:00
+				</p>
+				<p>
+					如果您在下单过程中遇到问题，请与我们联系。因为鲜花商品对配送时效有特殊要求，订购后请随时登录查询物流状态。
+				</p>
+			</div>
+		</div>
+		<div class="main_view_line2"></div>
+	</div>
+	<!--结束-->
+	<div class="footer">
+		<div class="four_nav">
+			<a class="four_nav_a bg1" href="#">
+				<div class="four_nav_div">
+					全场包邮
+					<span class="f14 f_wg_box">特殊礼品除外</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg2" href="#">
+				<div class="four_nav_div">
+					同城速递
+					<span class="f14 f_wg_box">支持当日送达</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg3" href="#">
+				<div class="four_nav_div">
+					爱的留言
+					<span class="f14 f_wg_box">支持语音与文字，可随时查阅</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg4" href="#">
+				<div class="four_nav_div">
+					保养物语
+					<span class="f14 f_wg_box">悉心保养，恒久保存爱意</span>
+				</div>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_box">
+			<div class="new_l mr50">
+				<a href="">
+					<img src="img/logo2.png"/>
+				</a>
+				<div style="position: relative;margin-top: 30px;">
+					<a>关注我们</a>
+					<a style="position: absolute;left: 80px;top: -2px;">
+						<img src="img/wx.png"/>
+					</a>
+					<a style="position: absolute;left: 125px;top: -4px;">
+						<img src="img/wb.png"/>
+					</a>
+				</div>
+			</div>
+			<ul>
+				<p>新手指南</p>
+				<li><a href="">购物流程</a></li>
+				<li><a href="">会员尊享</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">指圈测量</a></li>
+			</ul>
+			<ul>
+				<p>售后服务</p>
+				<li><a href="">退款说明</a></li>
+				<li><a href="">保养物语</a></li>
+			</ul>
+			<ul>
+				<p>物流配送</p>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">配送服务</a></li>
+			</ul>
+			<ul style="background: none;">
+				<p>关于我们</p>
+				<li><a href="">品牌介绍</a></li>
+				<li><a href="">销售渠道</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">加入我们</a></li>
+			</ul>
+			<div class="new_r">
+				<a href="">
+					<img src="img/ewm.jpg" style="width: 122px;"/>
+				</a>
+				<p>微信关注roseonly</p>
+			</div>
+		</div>
+		<div class="foot-nav">
+			京ICP备13007738号 京公网安备11010502023922 www.roseonly.com.cn；诺誓（北京）商业股份有限公司
+		</div>
+	</div>
+	<!--回到顶部-->
+	<div id="back-to-top" style="display: block;">
+		<a class="go_top" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703637041003761.svg"/>
+		</a>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			//首先将#back-to-top隐藏
+			$("#back-to-top").hide();
+			//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+			$(window).scroll(function(){ 
+				if ($(window).scrollTop()>900){
+					$("#back-to-top").fadeIn(500);
+				} else {
+					$("#back-to-top").fadeOut(500);
+				}
+			});
+			//当点击跳转链接后，回到页面顶部位置
+			$(".go_top").click(function(){
+				$('body,html').animate({scrollTop:0},200);
+				return false;
+			});
+		});
+		
+	</script>
+	<!--客服开始-->
+	<div id="zhichiBtnBox">
+		<a id="zhichiBtn" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703636967439422.svg"/>
+		</a>
+		<div class="mes_content" style="display: none;">
+			<div class="mes_icon">
+				<div class="tel_sj">
+					<img src="img/arr2.png"/>
+				</div>
+				<div class="tel_icon">
+					<p class="tel_txt">联系电话</p>
+					<p class="phone">400-1314-520</p>
+				</div>
+				<div class="tel_line"></div>
+				<div class="zxkf_txt">
+					<a href="">在线客服</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二维码开始-->
+	<div id="ewmBox">
+		<a id="ewm" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14945591270622918.svg"/>
+		</a>
+		<div class="ewm_content">
+			<img src="img/ewm2.png"/>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zhichiBtnBox").hover(function () {
+			$(".mes_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".mes_content").css({
+				display: 'none'
+			})
+		});
+		$("#ewmBox").hover(function () {
+			$(".ewm_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".ewm_content").css({
+				display: 'none'
+			})
+		});
+	</script>
+</body>
+</html>

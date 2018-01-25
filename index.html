@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/lunbo.css">
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/lunbo.js"></script>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="head">
+			<div class="div_lang">
+				<label>内地</label>
+				<ul>
+					<li class="hk">
+						<a href="#">Hong Kong</a>
+					</li>
+					<li class="cn">
+						<a href="#">内地</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="roseonly-logo" ></a>
+			<a href="#" class="larose-logo"></a>
+			<div class="logo_line"></div>
+			<div class="right">
+				<a href="login.html" class="unlogin">
+					<span class="h_font">登录</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="register.html" class="unlogin">
+					<span class="h_font">注册</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="shopcar.html" class="right-shop"></a>
+				<span class="cartNum">(0)</span>
+			</div>
+			<a href="#" class="std" target="_blank">
+				<label>专卖店</label>
+			</a>
+		</div>
+	</div>
+	<div class="logo-container">
+		<a href="#" class="logo_nbtn">
+			<img title="roseonly官网" alt="roseonly官网" src="img/logo.jpg">
+		</a>
+	</div>
+	<!-- 导航开始 -->
+	<div id="topmenus" class="nav-container">
+		<div class="nav-bar">
+			<ul id="nav" class="cl-effect-1">
+				<li style="margin: 0 32px 0 0;">
+					<a href="lovegift.html" class="topmenu_1 qxlm" style="background: rgb(199, 31, 44);">爱礼推荐</a>
+					<div class="menus2">
+						<div class="menus">
+							<div class="number1">
+								<span>场合</span>
+								<a href="">
+									<span>生日</span>
+								</a>
+								<a href="">
+									<span>纪念日</span>
+								</a>
+								<a href="">
+									<span>表白</span>
+								</a>
+								<a href="">
+									<span>生日<求婚>
+								</a>
+								<a href="">
+									<span>重要的人</span>
+								</a>
+								<a href="">
+									<span>道歉</span>
+								</a>
+							</div>
+							<div class="number1">
+								<span class="number1_tab">人群</span>
+								<a href="">
+									<span>送给她</span>
+								</a>
+								<a href="">
+									<span>送给他</span>
+								</a>
+								<a href="">
+									<span>送母亲</span>
+								</a>
+								<a href="">
+									<span>送父亲</span>
+								</a>
+							</div>
+							<div class="number1">
+								<span class="number1_tab">品类</span>
+								<a href="">
+									<span>鲜花玫瑰</span>
+								</a>
+								<a href="">
+									<span>永生玫瑰</span>
+								</a>
+								<a href="">
+									<span>玫瑰珠宝</span>
+								</a>
+								<a href="">
+									<span>玫瑰饰品</span>
+								</a>
+								<a href="">
+									<span>
+										玫瑰香氛
+										<label></label>
+									</span>
+								</a>
+								<a href="">
+									<span>
+										玫瑰礼品
+										<label></label>
+									</span>
+								</a>
+							</div>
+							<a class="menus_pic">
+								<img src="img/menu.jpg"/>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">鲜花玫瑰</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">永生玫瑰</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">玫瑰珠宝</a>
+				</li>
+				<li>
+					<a href="lovegift.html" class="topmenu_1">玫瑰饰品</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">玫瑰香氛</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">高端定制</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">诺誓世界</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				var topnav = document.getElementById('topmenus');
+				var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(scroll >= 120){
+					topnav.style.position = "fixed";
+					topnav.style.top = 0;
+				}else if(scroll <= 120){
+					topnav.style.position = "";
+				}
+			}
+		</script>
+	</div>
+	<!-- 主要内容 -->
+	<div class="container">
+		<div id="slider" class="flexslider">
+			<ul class="slides">	
+				<li><a href="#" class="img"><img src="img/1.jpg" alt="" /></a></li>
+		
+				<li><a href="#" class="img"><img src="img/2.jpg" alt="" /></a></li>
+		
+				<li><a href="#" class="img"><img src="img/3.jpg" alt="" /></a></li>
+		
+				<li><a href="#" class="img"><img src="img/4.jpg" alt="" /></a></li>
+		
+				<li><a href="#" class="img"><img src="img/5.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('#slider').flexslider({
+					animation: "slide",
+					direction:"horizontal",
+					easing:"swing"
+				});
+			})
+		</script>
+		<div class="brand">
+			<div class="new_content">
+				<div class="new_con1" style="margin-top: 25px">
+					<div class="new_xp">
+						<a href="#" target="_blank">
+							<img src="img/15151448237976451.jpg" alt="新品上新">
+						</a>
+						<div class="new_xp_txt">新品上新</div>
+					</div>
+					<div class="new_xp">
+						<a href="#" target="_blank">
+							<img src="img/15135808627714676.jpg" alt="经典热卖">
+						</a>
+						<div class="new_xp_txt">经典热卖</div>
+					</div>
+					<div class="new_xp">
+						<a href="#" target="_blank">
+							<img src="img/15163530117497505.jpg" alt="当月星座">
+						</a>
+						<div class="new_xp_txt">当月星座</div>
+					</div>
+					<div class="new_xp">
+						<a href="#" target="_blank">
+							<img src="img/15127208260961672.jpg" alt="明星同款">
+						</a>
+						<div class="new_xp_txt">明星同款</div>
+					</div>
+				</div>
+				<div class="new_title">
+					<div>热卖单品推荐</div>
+				</div>
+				<!-- 单品 -->
+				<div class="danpin">
+					<div class="indexPicBox">
+						<div class="hotPic">
+							<div class="num">
+								<li>
+									<a href="#">鲜花玫瑰</a>
+									<span class="tab_line"></span>
+								</li>
+								<li>
+									<a href="#">永生玫瑰</a>
+									<span class="tab_line"></span>
+								</li>
+								<li>
+									<a href="#">玫瑰珠宝</a>
+									<span class="tab_line"></span>
+								</li>
+								<li>
+									<a href="#">玫瑰饰品</a>
+									<span class="tab_line"></span>
+								</li>
+							</div>
+							<ul class="pic">
+								<li>
+									<div>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh1.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 许愿</h3>
+													<p>鲜花玫瑰 80cm长形</p>
+													<h2>￥2399.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh2.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 朱砂</h3>
+													<p>鲜花玫瑰 80cm长形</p>
+													<h2>￥1999.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh3.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 朱砂</h3>
+													<p>鲜花玫瑰 80cm粉色特别版</p>
+													<h2>￥1520.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh4.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 惊艳</h3>
+													<p>鲜花玫瑰 80cm长形</p>
+													<h2>￥1999.0</h2>
+												</dd>
+											</dl>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh5.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 朱砂</h3>
+													<p>鲜花玫瑰 40cm长形</p>
+													<h2>￥1520.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh6.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 朱砂</h3>
+													<p>鲜花玫瑰 40cm长形</p>
+													<h2>￥1520.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh7.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 惊艳</h3>
+													<p>鲜花玫瑰 40cm长形</p>
+													<h2>￥1520.0</h2>
+												</dd>
+											</dl>
+										</a>
+										<a href="#">
+											<dl>
+												<dt><img src="img/xh8.png" alt=""></dt>
+												<dd>
+													<h3>经典永续 初心</h3>
+													<p>鲜花玫瑰 40cm长形</p>
+													<h2>￥1520.0</h2>
+												</dd>
+											</dl>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>						
+					</div>
+				</div>
+				<!--鲜花玫瑰-->
+				<div class="mgxf" style="margin-top: 60px;">
+					<div class="mgxf_top">
+						<div class="mgxf_top_l">
+							<h2>
+								<a href="#" target="_blank">
+									鲜花玫瑰
+									<span class="title_line">|</span>
+									<span class="title_yw">Fresh Cut Rose</span>
+								</a>
+							</h2>
+						</div>
+						<div class="mgxf_top_r">
+							<a href="#" target="_blank">
+								More
+								<span class="more_sj"><img src="img/arr.png"/></span>
+							</a>						
+						</div>
+					</div>
+					<div class="mgxf_m">
+						<div class="mgxf_m_l">
+							<a href="#" target="_blank">
+								<img src="img/rose.jpg"/>
+								<div class="f_in"></div>
+							</a>
+						</div>
+						<div class="mgxf_m_r">
+							<a class="new_l" href="#" target="_blank">
+								<img src="img/rose1.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r" href="#" target="_blank">
+								<img src="img/rose2.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_l mgsp" href="#" target="_blank">
+								<img src="img/rose3.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r mgsp" href="#" target="_blank">
+								<img src="img/rose4.jpg"/>
+								<div class="f_out"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--永生玫瑰-->
+				<div class="mgxf" style="margin-top: 60px;">
+					<div class="mgxf_top">
+						<div class="mgxf_top_l">
+							<h2>
+								<a href="#" target="_blank">
+									永生玫瑰
+									<span class="title_line">|</span>
+									<span class="title_yw">Preserved Rose</span>
+								</a>
+							</h2>
+						</div>
+						<div class="mgxf_top_r">
+							<a href="#" target="_blank">
+								More
+								<span class="more_sj"><img src="img/arr.png"/></span>
+							</a>						
+						</div>
+					</div>
+					<div class="mgxf_m">
+						<div class="mgxf_m_l">
+							<a href="#" target="_blank">
+								<img src="img/ys1.jpg"/>
+								<div class="f_in"></div>
+							</a>
+						</div>
+						<div class="mgxf_m_r">
+							<a class="new_l" href="#" target="_blank">
+								<img src="img/ys2.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r" href="#" target="_blank">
+								<img src="img/ys3.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_l mgsp" href="#" target="_blank">
+								<img src="img/ys4.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r mgsp" href="#" target="_blank">
+								<img src="img/ys5.jpg"/>
+								<div class="f_out"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--玫瑰珠宝-->
+				<div class="mgxf" style="margin-top: 60px;">
+					<div class="mgxf_top">
+						<div class="mgxf_top_l">
+							<h2>
+								<a href="#" target="_blank">
+									玫瑰珠宝
+									<span class="title_line">|</span>
+									<span class="title_yw">Jewelry</span>
+								</a>
+							</h2>
+						</div>
+						<div class="mgxf_top_r">
+							<a href="#" target="_blank">
+								More
+								<span class="more_sj"><img src="img/arr.png"/></span>
+							</a>						
+						</div>
+					</div>
+					<div class="mgxf_m">
+						<div class="mgxf_m_l">
+							<a href="#" target="_blank">
+								<img src="img/zb1.jpg"/>
+								<div class="f_in"></div>
+							</a>
+						</div>
+						<div class="mgxf_m_r">
+							<a class="new_l" href="#" target="_blank">
+								<img src="img/zb2.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r" href="#" target="_blank">
+								<img src="img/zb3.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_l mgsp" href="#" target="_blank">
+								<img src="img/zb4.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r mgsp" href="#" target="_blank">
+								<img src="img/zb5.jpg"/>
+								<div class="f_out"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--玫瑰饰品-->
+				<div class="mgxf" style="margin-top: 60px;">
+					<div class="mgxf_top">
+						<div class="mgxf_top_l">
+							<h2>
+								<a href="#" target="_blank">
+									玫瑰饰品
+									<span class="title_line">|</span>
+									<span class="title_yw">Accessories</span>
+								</a>
+							</h2>
+						</div>
+						<div class="mgxf_top_r">
+							<a href="#" target="_blank">
+								More
+								<span class="more_sj"><img src="img/arr.png"/></span>
+							</a>						
+						</div>
+					</div>
+					<div class="mgxf_m">
+						<div class="mgxf_m_l">
+							<a href="#" target="_blank">
+								<img src="img/sp1.jpg"/>
+								<div class="f_in"></div>
+							</a>
+						</div>
+						<div class="mgxf_m_r">
+							<a class="new_l" href="#" target="_blank">
+								<img src="img/sp2.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r" href="#" target="_blank">
+								<img src="img/sp3.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_l mgsp" href="#" target="_blank">
+								<img src="img/sp4.jpg"/>
+								<div class="f_out"></div>
+							</a>
+							<a class="new_r mgsp" href="#" target="_blank">
+								<img src="img/sp5.jpg"/>
+								<div class="f_out"></div>
+							</a>
+						</div>
+					</div>
+				</div>			
+				<div class="fgx_line"></div>
+				<!--专卖店-->
+				<div style="clear: both;padding-top: 40px;">
+					<a class="new_l new_zmd" href="#" style="position: relative;">
+						<img src="img/zmd.jpg"/>
+						<div class="dz_cur"></div>
+					</a>
+					<a class="new_r new_zmd" href="#" style="position: relative;">
+						<img src="img/zmd2.jpg"/>
+						<div class="dz_cur"></div>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript">
+		$(function(){
+	        $.fn.fadeInOut = function(options){
+	            var _this=$(this);
+	            var time;
+	            var settings = {
+	                in_time:500,
+	                in_opcation:0.4,
+	                out_time:0,
+	                out_opcation:0,
+	                clock:500,
+	                content:'',
+	                flag:true
+	            };
+	            $.extend(settings, options);
+	            function init(){
+	                _this.each(function(){
+	                    var _this = $(this);
+	                    _this.hover(function () {
+	                        _this.find(settings.content).stop().fadeTo(settings.in_time,settings.in_opcation);
+	                        /* if(settings.flag){
+	                            time = setTimeout(function(){
+	                                _this.find(settings.content).stop().fadeTo(settings.out_time, settings.out_opcation);
+	                            },settings.clock);
+	                        }*/
+	                    }, function () {
+	                        _this.find(settings.content).stop().fadeTo(settings.out_time, settings.out_opcation);
+	                        if(settings.flag) {
+	                            clearTimeout(time);
+	                        }
+	                    });
+	                });
+	            }
+	            init();
+	        }
+	    });
+	    $(function(){
+	        $(".mgxf_m_l a").fadeInOut({
+	            content:'.f_in'
+	        });
+	        //$(".new_xp a").fadeInOut({
+	        //    content:'.xp_cur'
+	        //});
+	        $(".mgxf_m_r a").fadeInOut({
+	            content:'.f_out'
+	        });
+	        $(".new_zmd").fadeInOut({
+	            content:'.dz_cur'
+	        });
+	    });
+	</script>
+		
+	<!--结束-->
+	<div class="footer">
+		<div class="four_nav">
+			<a class="four_nav_a bg1" href="#">
+				<div class="four_nav_div">
+					全场包邮
+					<span class="f14 f_wg_box">特殊礼品除外</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg2" href="#">
+				<div class="four_nav_div">
+					同城速递
+					<span class="f14 f_wg_box">支持当日送达</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg3" href="#">
+				<div class="four_nav_div">
+					爱的留言
+					<span class="f14 f_wg_box">支持语音与文字，可随时查阅</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg4" href="#">
+				<div class="four_nav_div">
+					保养物语
+					<span class="f14 f_wg_box">悉心保养，恒久保存爱意</span>
+				</div>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_box">
+			<div class="new_l mr50">
+				<a href="">
+					<img src="img/logo2.png"/>
+				</a>
+				<div style="position: relative;margin-top: 30px;">
+					<a>关注我们</a>
+					<a style="position: absolute;left: 80px;top: -2px;">
+						<img src="img/wx.png"/>
+					</a>
+					<a style="position: absolute;left: 125px;top: -4px;">
+						<img src="img/wb.png"/>
+					</a>
+				</div>
+			</div>
+			<ul>
+				<p>新手指南</p>
+				<li><a href="">购物流程</a></li>
+				<li><a href="">会员尊享</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">指圈测量</a></li>
+			</ul>
+			<ul>
+				<p>售后服务</p>
+				<li><a href="">退款说明</a></li>
+				<li><a href="">保养物语</a></li>
+			</ul>
+			<ul>
+				<p>物流配送</p>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">配送服务</a></li>
+			</ul>
+			<ul style="background: none;">
+				<p>关于我们</p>
+				<li><a href="">品牌介绍</a></li>
+				<li><a href="">销售渠道</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">加入我们</a></li>
+			</ul>
+			<div class="new_r">
+				<a href="">
+					<img src="img/ewm.jpg" style="width: 122px;"/>
+				</a>
+				<p>微信关注roseonly</p>
+			</div>
+		</div>
+		<div class="foot-nav">
+			京ICP备13007738号 京公网安备11010502023922 www.roseonly.com.cn；诺誓（北京）商业股份有限公司
+		</div>
+	</div>
+	<!--回到顶部-->
+	<div id="back-to-top" style="display: none;">
+		<a class="go_top" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703637041003761.svg"/>
+		</a>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			//首先将#back-to-top隐藏
+			$("#back-to-top").hide();
+			//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+			$(window).scroll(function(){ 
+				if ($(window).scrollTop()>900){
+					$("#back-to-top").fadeIn(500);
+				} else {
+					$("#back-to-top").fadeOut(500);
+				}
+			});
+			//当点击跳转链接后，回到页面顶部位置
+			$(".go_top").click(function(){
+				$('body,html').animate({scrollTop:0},200);
+				return false;
+			});
+		});
+		
+	</script>
+	<!--客服开始-->
+	<div id="zhichiBtnBox">
+		<a id="zhichiBtn" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703636967439422.svg"/>
+		</a>
+		<div class="mes_content" style="display: none;">
+			<div class="mes_icon">
+				<div class="tel_sj">
+					<img src="img/arr2.png"/>
+				</div>
+				<div class="tel_icon">
+					<p class="tel_txt">联系电话</p>
+					<p class="phone">400-1314-520</p>
+				</div>
+				<div class="tel_line"></div>
+				<div class="zxkf_txt">
+					<a href="">在线客服</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二维码开始-->
+	<div id="ewmBox">
+		<a id="ewm" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14945591270622918.svg"/>
+		</a>
+		<div class="ewm_content">
+			<img src="img/ewm2.png"/>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zhichiBtnBox").hover(function () {
+			$(".mes_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".mes_content").css({
+				display: 'none'
+			})
+		});
+		$("#ewmBox").hover(function () {
+			$(".ewm_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".ewm_content").css({
+				display: 'none'
+			})
+		});
+	</script>
+</body>
+</html>

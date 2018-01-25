@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/details.css">
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="head">
+			<div class="div_lang">
+				<label>内地</label>
+				<ul>
+					<li class="hk">
+						<a href="#">Hong Kong</a>
+					</li>
+					<li class="cn">
+						<a href="#">内地</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="roseonly-logo" ></a>
+			<a href="#" class="larose-logo"></a>
+			<div class="logo_line"></div>
+			<div class="right">
+				<a href="login.html" class="unlogin">
+					<span class="h_font">登录</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="register.html" class="unlogin">
+					<span class="h_font">注册</span>
+					<span class="h_line">|</span>
+				</a>
+				<a href="shopcar.html" class="right-shop"></a>
+				<span class="cartNum">(0)</span>
+			</div>
+			<a href="#" class="std" target="_blank">
+				<label>专卖店</label>
+			</a>
+		</div>
+	</div>
+	<div class="logo-container">
+		<a href="index.html" class="logo_nbtn">
+			<img title="roseonly官网" alt="roseonly官网" src="img/logo.jpg">
+		</a>
+	</div>
+	<!-- 导航开始 -->
+	<div id="topmenus" class="nav-container">
+		<div class="nav-bar">
+			<ul id="nav" class="cl-effect-1">
+				<li style="margin: 0 32px 0 0;">
+					<a href="#" class="topmenu_1 qxlm">爱礼推荐</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">鲜花玫瑰</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">永生玫瑰</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">玫瑰珠宝</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">玫瑰饰品</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">玫瑰香氛</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">高端定制</a>
+				</li>
+				<li>
+					<a href="#" class="topmenu_1">诺誓世界</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				var topnav = document.getElementById('topmenus');
+				var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(scroll >= 120){
+					topnav.style.position = "fixed";
+					topnav.style.top = 0;
+				}else if(scroll <= 120){
+					topnav.style.position = "";
+				}
+			}
+		</script>
+	</div>
+	<!-- 主要内容 -->
+	<div class="container">
+		<div class="series" style="background: url(img/al-banner.jpg) no-repeat scroll 0 0;background-size: 100% 100%;"></div>
+		<div class="rose_select">
+			<a id="initpage" class="sort sort_add" href="javascript:;">综合</a>
+			<a id="salenum" class="sort" href="javascript:;">销量</a>
+			<a id="newest" class="sort" href="javascript:;">最新</a>
+			<a id="pay" class="sort1" href="javascript:;" data-flag="1">价格</a>
+			<input type="number" id="minprice" class="rose_select_input sortprice" value="" min="0" placeholder="￥" />
+			<span class="rose_select_span">—</span>
+			<input type="number" id="maxprice" class="rose_select_input sortprice" value="" min="0" placeholder="￥" />
+		</div>
+		<ul id="productlist" class="ul">
+			<a class="li_right" href="details.html" title="经典-许愿" data-price="2399.0" data-sale="518" data-id="2064" data-num="25" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf1.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">鲜花玫瑰 - 经典永续系列</b>
+					<p class="f12">经典许愿 19支 80cm长形</p>
+					<b class="f14">￥2399.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="经典-朱砂" data-price="1999.0" data-sale="8627" data-id="12" data-num="39" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf2.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">鲜花玫瑰 - 经典永续系列</b>
+					<p class="f12">经典朱砂 19支 80cm长形</p>
+					<b class="f14">￥1999.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="经典-朱砂" data-price="1520.0" data-sale="0" data-id="4427" data-num="47" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf3.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">鲜花玫瑰 - 经典永续系列</b>
+					<p class="f12">经典朱砂 11支 80cm粉色特别版</p>
+					<b class="f14">￥1520.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="小经典-朱砂" data-price="1314.0" data-sale="0" data-id="3809" data-num="100" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf4.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">鲜花玫瑰 - 经典永续系列</b>
+					<p class="f12">小经典朱砂 11支 40cm长形</p>
+					<b class="f14">￥1314.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="经典-许愿" data-price="1999.0" data-sale="2710" data-id="445" data-num="256" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf5.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">永生玫瑰 - 经典永续系列</b>
+					<p class="f12">经典许愿 单朵版 大型音乐球</p>
+					<b class="f14">￥1999.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="经典-嫣红" data-price="1999.0" data-sale="0" data-id="3273" data-num="138" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf6.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">永生玫瑰 - 经典永续系列</b>
+					<p class="f12">经典嫣红 单朵版 大型音乐球</p>
+					<b class="f14">￥1999.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="水瓶座-水瓶守护色" data-price="1314.0" data-sale="0" data-id="3070" data-num="498" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf7.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">永生玫瑰 - 星座经典系列</b>
+					<p class="f12">水瓶座 单朵 Mini音乐球</p>
+					<b class="f14">￥1314.0</b>
+				</li>
+			</a>
+			<a class="li_right" href="details.html" title="水瓶座-水瓶守护色" data-price="1314.0" data-sale="0" data-id="4165" data-num="74" target="_blank">
+				<li>
+					<div class="li_img">
+						<img class="lazy" src="img/lf8.png" alt="" style="display: inline;"/>
+					</div>
+					<b class="f14">永生玫瑰 - 星座经典系列</b>
+					<p class="f12">水瓶座水瓶守护色 单朵精装版 大型方形</p>
+					<b class="f14">￥1314.0</b>
+				</li>
+			</a>
+		</ul>
+	</div>
+		
+	<!--结束-->
+	<div class="footer">
+		<div class="four_nav">
+			<a class="four_nav_a bg1" href="#">
+				<div class="four_nav_div">
+					全场包邮
+					<span class="f14 f_wg_box">特殊礼品除外</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg2" href="#">
+				<div class="four_nav_div">
+					同城速递
+					<span class="f14 f_wg_box">支持当日送达</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg3" href="#">
+				<div class="four_nav_div">
+					爱的留言
+					<span class="f14 f_wg_box">支持语音与文字，可随时查阅</span>
+				</div>
+			</a>
+			<a class="four_nav_a bg4" href="#">
+				<div class="four_nav_div">
+					保养物语
+					<span class="f14 f_wg_box">悉心保养，恒久保存爱意</span>
+				</div>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<div class="footer_box">
+			<div class="new_l mr50">
+				<a href="">
+					<img src="img/logo2.png"/>
+				</a>
+				<div style="position: relative;margin-top: 30px;">
+					<a>关注我们</a>
+					<a style="position: absolute;left: 80px;top: -2px;">
+						<img src="img/wx.png"/>
+					</a>
+					<a style="position: absolute;left: 125px;top: -4px;">
+						<img src="img/wb.png"/>
+					</a>
+				</div>
+			</div>
+			<ul>
+				<p>新手指南</p>
+				<li><a href="">购物流程</a></li>
+				<li><a href="">会员尊享</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">指圈测量</a></li>
+			</ul>
+			<ul>
+				<p>售后服务</p>
+				<li><a href="">退款说明</a></li>
+				<li><a href="">保养物语</a></li>
+			</ul>
+			<ul>
+				<p>物流配送</p>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">配送服务</a></li>
+			</ul>
+			<ul style="background: none;">
+				<p>关于我们</p>
+				<li><a href="">品牌介绍</a></li>
+				<li><a href="">销售渠道</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">加入我们</a></li>
+			</ul>
+			<div class="new_r">
+				<a href="">
+					<img src="img/ewm.jpg" style="width: 122px;"/>
+				</a>
+				<p>微信关注roseonly</p>
+			</div>
+		</div>
+		<div class="foot-nav">
+			京ICP备13007738号 京公网安备11010502023922 www.roseonly.com.cn；诺誓（北京）商业股份有限公司
+		</div>
+	</div>
+	<!--回到顶部-->
+	<div id="back-to-top" style="display: block;">
+		<a class="go_top" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703637041003761.svg"/>
+		</a>
+	</div>
+	<script type="text/javascript">
+		//当点击跳转链接后，回到页面顶部位置
+		$(".go_top").click(function(){
+			$('body,html').animate({scrollTop:0},200);
+			return false;
+		});
+		
+	</script>
+	<!--客服开始-->
+	<div id="zhichiBtnBox">
+		<a id="zhichiBtn" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14703636967439422.svg"/>
+		</a>
+		<div class="mes_content" style="display: none;">
+			<div class="mes_icon">
+				<div class="tel_sj">
+					<img src="img/arr2.png"/>
+				</div>
+				<div class="tel_icon">
+					<p class="tel_txt">联系电话</p>
+					<p class="phone">400-1314-520</p>
+				</div>
+				<div class="tel_line"></div>
+				<div class="zxkf_txt">
+					<a href="">在线客服</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二维码开始-->
+	<div id="ewmBox">
+		<a id="ewm" href="javascript:;">
+			<img src="http://www.roseonly.com.cn/upload/syspic_new/14945591270622918.svg"/>
+		</a>
+		<div class="ewm_content">
+			<img src="img/ewm2.png"/>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#zhichiBtnBox").hover(function () {
+			$(".mes_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".mes_content").css({
+				display: 'none'
+			})
+		});
+		$("#ewmBox").hover(function () {
+			$(".ewm_content").css({
+				display: 'block'
+			})
+		}, function () {
+			$(".ewm_content").css({
+				display: 'none'
+			})
+		});
+	</script>
+</body>
+</html>

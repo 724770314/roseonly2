@@ -1,0 +1,132 @@
+.nav-container {
+    position: relative;
+    background: #414141;
+    width: 100%;
+    min-width: 1240px;
+}
+.main_view_line2 {
+    width: 100%;
+    height: 6px;
+    border-top: solid 2px #83847e;
+    border-bottom: solid 1px #83847e;
+    clear: both;
+}
+.order{
+    width:962px; 
+    margin:0 auto 30px;
+    min-height:500px;
+}
+.shopping {
+    width: 962px;
+    margin:0 auto;
+    font-size: 14px;
+}
+.shop-a {
+    width: 962px;
+    height: 70px;
+    border-bottom: solid 1px #414141;
+}
+.shop-left {
+    width: 400px;
+    height: 70px;
+    line-height: 100px;
+    float: left;
+    font-size: 22px;
+    color: #414141;
+}
+.shop-right {
+    width: 90px;
+    height: 70px;
+    line-height: 100px;
+    display: block;
+    color: #414141;
+    font-size: 14;
+    float: right;
+    text-align: right;
+    background: url(../img/cart01.png) no-repeat scroll 0 42px;
+}
+.shopping_cart {
+    width: 962px;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #414141;
+    border-bottom: solid 1px #414141;
+    text-align: center;
+    a{
+        color: #414141;
+        cursor: pointer;
+    }
+}
+.shopping_cart_title {
+    border-bottom: solid 1px #414141;
+    height: 30px;
+    line-height: 30px;
+}
+.shopping_cart_img {
+    height: 100px;
+    display: block;
+    float: left;
+    margin: 10px 15px 10px 10px;
+}
+.shopping_cart_name {
+    display: table-cell;
+    padding-top: 40px;
+    text-align: left;
+}
+.jia_jian {
+    cursor: pointer;
+}
+.shopping_cart_sl {
+    width: 68px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #414141;
+    margin: 0 3px;
+}
+.cart_total {
+    height: 40px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #414141;
+    text-align: left;
+    width: 260px;
+    float: right;
+    position: relative;
+    margin-top: 15px;
+    font{
+        font-family: Adobe Caslon Pro;
+    }
+}
+.cart_button1 {
+    width: 110px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    -webkit-appearance: none;
+    background: #c71f2c;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.help-right {
+    width:100%; 
+    font-size:12px;
+}
+.help-nav {
+    font-size: 18px;
+    line-height: 30px;
+}
+.main_view_line2 {
+    width: 100%;
+    height: 6px;
+    border-top: solid 2px #83847e;
+    border-bottom: solid 1px #83847e;
+    clear: both
+}
