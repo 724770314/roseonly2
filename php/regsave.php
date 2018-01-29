@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <?php
     header("content-type","text/html;charset=utf-8");
     //一、接收前端数据
@@ -8,13 +9,17 @@
 
     //1、链接数据库（搭桥）
     $conn = mysql_connect("localhost","root","root");
+	if(!$conn){
+		echo "连接失败";
+	}
 
     //2、选择数据库（目的地）
-    mysql_select_db("flowerDB",$conn);
+    mysql_select_db("flowerdb",$conn);
 
     //3、数据库操作
     //3.1查找用户名是否存在
     $sqlStr="select * from vip where username='".$username."'";
+    echo $sqlStr;
     $result = mysql_query($sqlStr,$conn);
     $rows = mysql_num_rows($result);
     if($rows==0){
@@ -26,9 +31,9 @@
         //4、关闭数据库
         mysql_close($conn);
         //三、响应
-        echo "注册成功！"
+        echo "<a href='login.html'>登录页面</a>";
     }else{
         //三、响应
-        echo "注册失败，该用户名已经存在！"
+        echo "注册失败，该用户名已经存在！";
     }
 ?>

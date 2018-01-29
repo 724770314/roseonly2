@@ -94,6 +94,26 @@ input:-webkit-autofill {
         position: relative;
         margin-top: 0px;
     }
+    #regspan{
+        position: absolute;
+        line-height: 40px;
+        vertical-align: middle;
+        right: 10px;
+        top: 0;
+        font-size: 20px; 
+        color: green;
+        display: none;
+    }
+    #regspan2{
+        position: absolute;
+        line-height: 40px;
+        vertical-align: middle;
+        right: 10px;
+        top: 0;
+        font-size: 20px; 
+        color: red;
+        opacity: 0;
+    }
     .indent{
         text-indent: 0;
         height:45px;
@@ -105,13 +125,11 @@ input:-webkit-autofill {
     .reminder {
         color: #EB2D47;
         font-size: 12px;
-        display: none;
         text-align: left;
         width: 250px;
         height:22px;
         line-height: 22px;
         padding-left: 16px;
-        background: url(../img/th.png) no-repeat left center;
     }
     .register_yzm {
         width: 290px;
@@ -124,15 +142,17 @@ input:-webkit-autofill {
         padding: 14px 0 14px 10px;
         margin-top: 0px;
     }
-    .register_yzmimg {
-        display: table-cell;
-        height: 40px;
-        vertical-align: middle;
-        margin: 0;
-        padding: 0;
+    .register_yzmdiv {
+        width: 100px;
+        height: 44px;
+        line-height: 44px;
         position: absolute;
         right: 0;
         top: 0;
+        background: #d2d2d2;
+        color: cornflowerblue;
+        font-size: 20px;
+        text-align: center;
     }
 }
 .register_nav span,
@@ -143,6 +163,14 @@ input:-webkit-autofill {
     vertical-align: middle;
     right: 0;
     top: 0;
+}
+#yzmspan{
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    display: none;
 }
 .register_yyzh {
     margin: 0;
@@ -251,7 +279,7 @@ input:-webkit-autofill {
 .register_button {
     width: 290px;
     margin: 0px auto;
-    a {
+    input {
         width: 290px;
         height: 45px;
         line-height: 45px;
@@ -260,8 +288,10 @@ input:-webkit-autofill {
         color: #fff;
         font-size: 16px;
         letter-spacing: 2px;
+        border: 0;
+        cursor: pointer;
     }
-    a:hover,.sms_button a:active{
+    input:hover,.sms_button a:active{
         background-color: #666;
     }
 }

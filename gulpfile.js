@@ -16,6 +16,11 @@ gulp.task('css',function(){
 	.pipe(gulp.dest('E:\\phpStudy\\WWW\\qianfeng1708\\css'))
 })
 
+gulp.task('php',function(){
+	gulp.src('php/*.php')
+	.pipe(gulp.dest('E:\\phpStudy\\WWW\\qianfeng1708\\php'))
+})
+
 gulp.task('js',function(){
 	gulp.src('js/*.js')
 	.pipe(gulp.dest('E:\\phpStudy\\WWW\\qianfeng1708\\js'))
@@ -26,6 +31,7 @@ gulp.task('watchall',function () {
 	gulp.watch('img/*.{JPEG,jpg,png}',['img']);
 	gulp.watch('css/*.css',['css']);
 	gulp.watch('js/*.js',['js']);
+	gulp.watch('php/*.php',['php']);
 });
 
 gulp.task('sass',function(){

@@ -70,7 +70,7 @@
 							<td width="110">序号</td>
 							<td width="110">品牌</td>
 							<td width="420">商品名称</td>
-							<td width="120">单价</td>
+							<td width="120">价格</td>
 							<td width="13"></td>
 							<td width="60">数量</td>
 							<td width="13"></td>
@@ -85,20 +85,20 @@
 							</td>
 							<td class="td_price_2064">￥2399.0</td>
 							<td>
-								<a class="cart_down" href="javascript:void(0);">
+								<a class="cart_down" href="javascript:;">
 									<img class="jia_jian" src="img/jian.png"/>
 								</a>
 							</td>
 							<td>
-								<input type="text" id="cart_count_2064" class="shopping_cart_sl" value="1" maxlength="4" data-num="23" />
+								<input type="text" id="cart_count_2064" data-num="26" maxlength="4" class="shopping_cart_sl" value="1" />
 							</td>
 							<td align="right">
-								<a class="cart_up" href="javascript:void(0);">
+								<a class="cart_up" href="javascript:;">
 									<img class="jia_jian" src="img/jia.png"/>
 								</a>
 							</td>
 							<td>
-								<a class="cart_del" href="javascript:void(0);">删除</a>
+								<a class="cart_del" href="javascript:;">删除</a>
 							</td>
 						</tr>
 					</tbody>
@@ -109,6 +109,21 @@
 					<input type="button" id="cart_pay" class="cart_button1" value="去结算" />
 				</div>
 			</div>
+			<script type="text/javascript">
+				var trDoms = document.getElementById("t").rows;
+				for(var i=1; i<trDoms.length;i++){
+					trDoms[i].cells[6].children.onlick = function(){
+						let count = parseInt(this.parentNode.previousElementSibling.innerHTML);
+						count++;
+						this.parentNode.previousElementSibling.innerHTML = count;
+						
+						let price = parseFloat(this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML);
+						let money = count*price;
+						this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML = money;
+					}
+				}
+				
+			</script>
 			<div class="clear"></div>
 			<div class="help-right">
 				<div class="help-nav">订单帮助</div>

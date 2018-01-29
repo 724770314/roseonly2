@@ -10,7 +10,7 @@
     $conn = mysql_connect("localhost","root","root");
     
     //2、选择数据库（目的地）
-    mysql_select_db("flowerDB",$conn);
+    mysql_select_db("flowerdb",$conn);
 
     //3、数据库操作
     //3.1查找用户名是否存在
