@@ -164,12 +164,9 @@ input:-webkit-autofill {
   top: 40px;
   display: none; }
 
-.register_yyzh {
-  margin: 0;
+.register_p a {
+  color: #000;
   float: right; }
-
-.register_yyzh > a {
-  color: #000; }
 
 .register_yyzm {
   color: #83847e;
@@ -299,3 +296,20 @@ input:-webkit-autofill {
 
 .background2 {
   background: #c6c6c6; }
+
+.background3 {
+  height: 45px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin: 10px auto 0;
+  background: #c6c6c6;
+  width: 290px;
+  font-size: 16px;
+  text-indent: px;
+  letter-spacing: 2px;
+  border: 0;
+  cursor: pointer; }
+
+.background3:hover {
+  background: #666; }

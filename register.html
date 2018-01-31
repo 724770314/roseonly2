@@ -127,12 +127,10 @@
 							<div class="reminder"></div>	
 						</div>
 						<div class="register_p">
-							<p class="register_yyzh">
-								<a href="login.html">已有账号</a>
-							</p>
+							<a href="login.html">已有账号</a>
 						</div>
 						<div class="register_button">
-							<input type="button" id="registerSubmit"  class="background2" value="创建账号"></input>
+							<input type="submit" id="registerSubmit"  class="background2" value="创建账号"></input>
 						</div>
 						<div class="register_bottom">
 							roseonly支持门店城市同城速递服务!
@@ -204,30 +202,30 @@
 				return false;
 			}
 			
-		    //用户名存在性验证
-		    var usernameExists = true;
-		    $("#username").blur(function () {
-		            $.ajax({
-		                url:"php/regsave.php",
-		                method:"get",
-		                data:{"username":$("#username").val()},
-		                success:function (data) {
-		                    if(data=="0"){
-		                        usernameExists = false;
-		                        $("#usernameMsg").html("该用户名可用");
-		                    }else{
-		                        usernameExists = true;
-		                        $("#usernameMsg").html("该用户名已存在");
-		                    }
-		                }
-		            });
-		        });
-		
-		    $("#registerForm").click(function () {
-		        if(usernameExists){
-		            return false;//阻止浏览器的默认行为。
-		        }
-		    });
+//		    //用户名存在性验证
+//		    var usernameExists = true;
+//		    $("#username").blur(function () {
+//		            $.ajax({
+//		                url:"php/regsave.php",
+//		                method:"get",
+//		                data:{"username":$("#username").val()},
+//		                success:function (data) {
+//		                    if(data=="0"){
+//		                        usernameExists = false;
+//		                        $("#usernameMsg").html("该用户名可用");
+//		                    }else{
+//		                        usernameExists = true;
+//		                        $("#usernameMsg").html("该用户名已存在");
+//		                    }
+//		                }
+//		            });
+//		        });
+//		
+//		    $("#registerForm").click(function () {
+//		        if(usernameExists){
+//		            return false;//阻止浏览器的默认行为。
+//		        }
+//		    });
 		}); 
 	</script>
 	<!--结束-->

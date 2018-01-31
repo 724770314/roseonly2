@@ -25,6 +25,6 @@
     if($rows==0){
         echo "用户名/密码输入错误";
     }else{
-        echo "恭喜您，登录成功，进入<a href='index.html'>首页</a>";
+        header("Location:../index.html");
     }
 ?>
